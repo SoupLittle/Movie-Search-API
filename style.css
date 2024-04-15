@@ -1,21 +1,41 @@
-*{
+body {
     /* General background img  */
     background-image: url("Background.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover; /* Cover the entire viewport */
     min-height: 100vh;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .container {
+    position: relative; /* Make sure it's relative to the body */
+    z-index: 2; /* Ensure it's above the blurred background */
+  }
+  
+  .search-box {
+    position: absolute;
+    top: 80px; /* Adjust as needed */
+    right: 500px;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure it's above the blurred background */
+  }
+  
 
-    /*Blurs the background img*/
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+/* Random movie */
 
-    /*  */
+#Random-Btn{
+top: 50%;
+left: 5%;
+position: fixed;
+position: relative;
+transform: translateY(900%);
 }
-
-/* Search box */
-
 
 /* Movie box */
 
 
-/* Text's color and size */
+/* Text color and size */
+.text {
+    color: white; /* Example color */
+    font-size: 16px; /* Example font size */
+}
