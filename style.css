@@ -13,15 +13,16 @@ body {
   }
   
   .search-box {
-    position: absolute;
-    top: 80px; /* Adjust as needed */
-    right: 500px;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 5%;
+    position: fixed;
+    position: relative;
+    transform: translateY(900%);
     z-index: 2; /* Ensure it's above the blurred background */
   }
   
 
-/* Random movie */
+/* ---------------------------------------------------------------------Random movie----------------------------------------------------------------------------- */
 
 #Random-Btn{
 top: 50%;
@@ -31,7 +32,7 @@ position: relative;
 transform: translateY(900%);
 }
 
-/* Movie box */
+/* ------------------------------------------------------------------------Movie box---------------------------------------------------------------------------- */
 
 
 /* Text color and size */
